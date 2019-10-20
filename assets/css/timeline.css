@@ -1,0 +1,152 @@
+#timeline {
+  width: 800px;
+  height: 350px;
+  overflow: hidden;
+  margin: 30px auto;
+  position: relative;
+  background: url('../img/timeline/dot.gif') left 45px repeat-x;
+}
+
+#timeline a {
+  color: #e49587;
+  text-decoration: none;
+    /* -webkit-transition: 0.5s;
+    transition: 0.5s; */
+}
+
+#timeline a:hover, #timeline a.selected {
+  color: #ff6347;
+}
+
+#dates {
+  width: 800px;
+  height: 60px;
+  overflow: hidden;
+  margin-left: 300px;
+}
+
+#dates li {
+  list-style: none;
+  float: left;
+  width: 100px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  background: url('../img/timeline/biggerdot.png') center bottom no-repeat;
+}
+
+#dates a {
+  line-height: 38px;
+  padding-bottom: 10px;
+}
+
+#dates .selected {
+  font-size: 38px;
+}
+
+#issues {
+  width: 800px;
+  height: 350px;
+  overflow: hidden;
+}
+
+#issues li {
+  width: 800px;
+  height: 350px;
+  list-style: none;
+  float: left;
+}
+
+#issues li.selected img {
+  /* -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1); */
+}
+
+#issues li img {
+  float: left;
+  margin: 50px 35px 10px 0px;
+  width: 192px;   
+  height: 192px;
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+  /* IE 8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
+  /* IE 6 & 7 */
+  zoom: 1;
+  /* -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  -webkit-transform: scale(0.7, 0.7);
+  /
+  transform: scale(0.7, 0.7); */
+}
+
+#issues li h1 {
+  color: #ff4d47;
+  display: flex;
+  font-size: 36px;
+  margin: 20px 0 0 0;
+  text-shadow: #000 1px 1px 2px;
+}
+
+#issues li h2 {
+  display: flex;
+  margin-top: 0;
+}
+
+#issues li p {
+  display: flex;
+  font-size: 14px;
+  margin-right: 70px;
+  font-weight: normal;
+  line-height: 22px;
+  text-shadow: #000 1px 1px 2px;
+  text-align: justify;
+}
+
+#grad_left, #grad_right {
+  width: 100px;
+  height: 350px;
+  position: absolute;
+  top: 0;
+}
+
+#grad_left {
+  left: 0;
+  background: url('../img/timeline/grad_left.png') repeat-y;
+}
+
+#grad_right {
+  right: 0;
+  background: url('../img/timeline/grad_right.png') repeat-y;
+}
+
+#next, #prev {
+  position: absolute;
+  top: 0;
+  font-size: 70px;
+  top: 170px;
+  width: 22px;
+  height: 38px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+#next:hover, #prev:hover {
+  background-position: 0 -76px;
+}
+
+#next {
+  right: 0;
+  background-image: url('../img/timeline/next.png');
+}
+
+#prev {
+  left: 0;
+  background-image: url('../img/timeline/prev.png');
+}
+
+#next.disabled, #prev.disabled {
+  opacity: 0.2;
+}
