@@ -1,6 +1,6 @@
 #timeline {
   width: 800px;
-  height: 350px;
+  height: 100%;
   overflow: hidden;
   margin: 30px auto;
   position: relative;
@@ -66,7 +66,7 @@
   float: left;
   margin: 50px 35px 10px 0px;
   width: 192px;   
-  height: 192px;
+  height: 220px;
   background: transparent;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
   /* IE 8 */
@@ -84,7 +84,8 @@
   color: #ff4d47;
   display: flex;
   font-size: 36px;
-  margin: 20px 0 0 0;
+  margin: 20px 100px 10px 0; 
+  line-height: 35px;
   text-shadow: #000 1px 1px 2px;
 }
 
@@ -96,7 +97,7 @@
 #issues li p {
   display: flex;
   font-size: 14px;
-  margin-right: 70px;
+  margin-right: 100px;
   font-weight: normal;
   line-height: 22px;
   text-shadow: #000 1px 1px 2px;
