@@ -12,9 +12,9 @@
   text-decoration: none;
 }
 
-#timeline a:hover, #timeline a.selected {
-  /* color: rgb(32, 65, 253); */
-  color: white;
+#timeline a:hover,
+#timeline a.selected {
+  color: rgb(32, 65, 253);
 }
 
 #dates {
@@ -83,7 +83,11 @@
   margin-top: 0;
 }
 
-#issues li span, #issues li p, #issues li strong, #issues li sub, #issues li sup {
+#issues li span,
+#issues li p,
+#issues li strong,
+#issues li sub,
+#issues li sup {
   font-size: 14px;
   font-weight: normal;
   line-height: 22px;
@@ -95,7 +99,7 @@
   margin-right: 50px;
 }
 
-#grad_left, 
+#grad_left,
 #grad_right {
   width: 100px;
   height: 350px;
@@ -121,7 +125,8 @@
   height: 38px;
 }
 
-#next svg, #prev svg {
+#next svg,
+#prev svg {
   color: white;
 }
 

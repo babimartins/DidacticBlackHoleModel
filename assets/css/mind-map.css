@@ -14,3 +14,22 @@
   stroke: rgb(15, 51, 255);
   stroke-width: 3px;
 }
+
+.pop-ups {
+  fill: rgba(147, 186, 222, 1);
+  z-index: 2;
+  rx: 12;
+  ry: 12;
+}
+
+.explanation {
+  display: none;
+}
+
+.explanation-text {
+  font-size: 12px;
+}
+
+.map-el:hover {
+  cursor: pointer;
+}

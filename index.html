@@ -332,7 +332,7 @@
             <li class="l-section section">
                 <div id="mind-map">                
                     <svg width="1200" height="600">
-                      <g>
+                      <g id="buraco-negro" class="map-el">
                         <rect class="rects" x="600" y="70" width="110" height="50" />
                         <text class="texts" x="600" y="70" >
                           <tspan x="600" dx="10" dy="22">BURACO</tspan>
@@ -340,28 +340,28 @@
                         </text>
                       </g>
                       <line class="lines" x1="610" y1="100" x2="300" y2="210" />
-                      <g>
+                      <g id="gravidade" class="map-el">
                         <rect class="rects" x="230" y="200" width="150" height="35" />
                         <text class="texts" x="230" y="200" >
                           <tspan dx="15" dy="25">GRAVIDADE</tspan>
                         </text>
                       </g>
                       <line class="lines" x1="625" y1="110" x2="500" y2="250" />
-                      <g>
+                      <g id="geometria" class="map-el">
                         <rect class="rects" x="420" y="230" width="150" height="35" />
                         <text class="texts" x="420" y="230" >
                           <tspan dx="15" dy="25">GEOMETRIA</tspan>
                         </text>
                       </g>
                       <line class="lines" x1="660" y1="115" x2="680" y2="250" />
-                      <g>
+                      <g id="densidade" class="map-el">
                         <rect class="rects" x="600" y="250" width="150" height="35" />
                         <text class="texts" x="600" y="250" >
                           <tspan dx="15" dy="25">DENSIDADE</tspan>
                         </text>
                       </g>
                       <line class="lines" x1="680" y1="115" x2="850" y2="260" />
-                      <g>
+                      <g id="espaco-tempo" class="map-el">
                         <rect class="rects" x="840" y="250" width="100" height="60" />
                         <text class="texts" x="840" y="250" >
                           <tspan x="840" dx="10" dy="25">ESPAÇO</tspan>
@@ -369,9 +369,9 @@
                         </text>
                       </g>
                       <line class="lines" x1="700" y1="100" x2="980" y2="185" />
-                      <g>
-                        <rect class="rects" x="970" y="180" width="100" height="35" />
-                        <text class="texts" x="970" y="180" >
+                      <g id="massa" class="map-el">
+                        <rect class="rects" x="960" y="180" width="100" height="35" />
+                        <text class="texts" x="960" y="180" >
                           <tspan dx="15" dy="25">MASSA</tspan>
                         </text>
                       </g>
@@ -379,7 +379,7 @@
                       <line class="lines" x1="480" y1="260" x2="555" y2="405" />
                       <line class="lines" x1="680" y1="280" x2="575" y2="405" />
                       <line class="lines" x1="850" y1="280" x2="615" y2="405" />
-                      <g>
+                      <g id="singularidade" class="map-el">
                         <rect class="rects" x="450" y="400" width="200" height="35" />
                         <text class="texts" x="450" y="400" >
                           <tspan dx="15" dy="25">SINGULARIDADE</tspan>
@@ -387,7 +387,7 @@
                       </g>
                       <line class="lines" x1="640" y1="420" x2="800" y2="460" />
                       <line class="lines" x1="890" y1="305" x2="870" y2="460" />
-                      <g>
+                      <g id="horizonte-eventos" class="map-el">
                         <rect class="rects" x="790" y="430" width="150" height="60" />
                         <text class="texts" x="790" y="430" >
                           <tspan x="790" dx="12" dy="25">HORIZONTE</tspan>
@@ -396,19 +396,88 @@
                       </g>
                       <line class="lines" x1="1020" y1="210" x2="1100" y2="490" />
                       <line class="lines" x1="920" y1="460" x2="1080" y2="510" />
-                      <g>
+                      <g id="disco-acrecao" class="map-el">
                         <rect class="rects" x="1050" y="480" width="120" height="60" />
                         <text class="texts" x="1050" y="480" >
                           <tspan x="1050" dx="10" dy="25">DISCO DE</tspan>
                           <tspan x="1050" dx="10" dy="25">ACREÇÃO</tspan>
                         </text>
                       </g>
-                      <line class="lines" x1="550" y1="430" x2="640" y2="510" />
-                      <g>
-                        <rect class="rects" x="550" y="500" width="165" height="60" />
-                        <text class="texts" x="550" y="500" >
-                          <tspan x="550" dx="10" dy="25">RELATIVIDADE</tspan>
-                          <tspan x="550" dx="10" dy="25">VS QUÂNTICA</tspan>
+                      <line class="lines" x1="550" y1="430" x2="540" y2="510" />
+                      <g id="relatividade-quantica" class="map-el">
+                        <rect class="rects" x="450" y="500" width="165" height="60" />
+                        <text class="texts" x="450" y="500" >
+                          <tspan x="450" dx="10" dy="25">RELATIVIDADE</tspan>
+                          <tspan x="450" dx="10" dy="25">VS QUÂNTICA</tspan>
+                        </text>
+                      </g>
+                      <g id="buraco-negro-explanation" class="explanation">
+                        <rect class="pop-ups" x="320" y="100" width="270" height="150" />
+                        <text class="texts explanation-text" x="320" y="100" >
+                          <tspan x="320" dx="10" dy="22">Um buraco negro é uma região do espaço</tspan>
+                          <tspan x="320" dx="10" dy="22">da qual nada, nem mesmo partículas que</tspan>
+                          <tspan x="320" dx="10" dy="22">que se movem à velocidade da luz, podem</tspan>
+                          <tspan x="320" dx="10" dy="22">escapar, pois a sua velocidade é inferior</tspan>
+                          <tspan x="320" dx="10" dy="22">à velocidade de escape desses corpos</tspan>
+                          <tspan x="320" dx="10" dy="22">celestes infinitamente densos.</tspan>                                                                
+                        </text>
+                      </g>
+                      <g id="gravidade-explanation" class="explanation">
+                        <rect class="pop-ups" x="100" y="250" width="260" height="130" />
+                        <text class="texts explanation-text" x="100" y="250" >
+                          <tspan x="100" dx="10" dy="20">Gravidade é o fenômeno de atração que</tspan>
+                          <tspan x="100" dx="10" dy="20">comanda a movimentação dos objetos.</tspan>
+                          <tspan x="100" dx="10" dy="20">Ela é um dos elementos essenciais na</tspan>
+                          <tspan x="100" dx="10" dy="20">a formação de um buraco negro, pois</tspan>
+                          <tspan x="100" dx="10" dy="20">nada consegue escapar da atração de</tspan>
+                          <tspan x="100" dx="10" dy="20">sua força de gravidade.</tspan>
+                        </text>
+                      </g>
+                      <g id="geometria-explanation" class="explanation">
+                        <rect class="pop-ups" x="200" y="272" width="260" height="130" />
+                        <text class="texts explanation-text" x="200" y="272" >
+                          <tspan x="200" dx="10" dy="20">TÁ ERRADO AQUI OPORRA CARAI CU </tspan>
+                          <tspan x="200" dx="10" dy="20">comanda a movimentação dos objetos.</tspan>
+                          <tspan x="200" dx="10" dy="20">Ela é um dos elementos essenciais na</tspan>
+                          <tspan x="200" dx="10" dy="20">a formação de um buraco negro, pois</tspan>
+                          <tspan x="200" dx="10" dy="20">nada consegue escapar da atração de</tspan>
+                          <tspan x="200" dx="10" dy="20">sua força de gravidade.</tspan>
+                        </text>
+                      </g>
+                      <g id="densidade-explanation" class="explanation">
+                        <rect class="pop-ups" x="680" y="295" width="310" height="170" />
+                        <text class="texts explanation-text" x="680" y="295" >
+                          <tspan x="680" dx="10" dy="20">A densidade de um corpo define-se como o</tspan>
+                          <tspan x="680" dx="10" dy="20">quociente entre a massa e o volume desse</tspan>
+                          <tspan x="680" dx="10" dy="20">corpo. Um buraco negro só se forma se possuir</tspan>
+                          <tspan x="680" dx="10" dy="20">uma densidade extremamente alta, ou seja, uma</tspan>
+                          <tspan x="680" dx="10" dy="20">grande massa e um raio muito pequeno, pois</tspan>
+                          <tspan x="680" dx="10" dy="20">apenas um corpo assim é capaz de causar uma</tspan>
+                          <tspan x="680" dx="10" dy="20">distorção no espaço-tempo grande o suficiente</tspan>
+                          <tspan x="680" dx="10" dy="20">para formar uma singularidade.</tspan>
+                        </text>
+                      </g>
+                      <g id="espaco-tempo-explanation" class="explanation">
+                        <rect class="pop-ups" x="960" y="260" width="220" height="150" />
+                        <text class="texts explanation-text" x="960" y="260" >
+                          <tspan x="960" dx="10" dy="20">O espaço-tempo é o sistema de</tspan>
+                          <tspan x="960" dx="10" dy="20">coordenadas utilizado como base</tspan>
+                          <tspan x="960" dx="10" dy="20">para o estudo da relatividade</tspan>
+                          <tspan x="960" dx="10" dy="20">restrita e relatividade geral.</tspan>
+                          <tspan x="960" dx="10" dy="20">No buraco negro, a alteração</tspan>
+                          <tspan x="960" dx="10" dy="20">nessa malha é tão grande que</tspan>
+                          <tspan x="960" dx="10" dy="20">o espaço-tempo deixa de existir.</tspan>
+                        </text>
+                      </g>
+                      <g id="massa-explanation" class="explanation">
+                        <rect class="pop-ups" x="850" y="35" width="235" height="135" />
+                        <text class="texts explanation-text" x="850" y="35" >
+                            <tspan x="850" dx="10" dy="20">A massa de um corpo é elemento</tspan>
+                            <tspan x="850" dx="10" dy="20">fundamental da densidade, e um</tspan>
+                            <tspan x="850" dx="10" dy="20">buraco negro só se forma se possuir</tspan>
+                            <tspan x="850" dx="10" dy="20">uma densidade extremamente alta,</tspan>
+                            <tspan x="850" dx="10" dy="20">ou seja, é necessrio uma grande</tspan>
+                            <tspan x="850" dx="10" dy="20">massa para causar um buraco negro.</tspan>
                         </text>
                       </g>
                     </svg>
@@ -513,6 +582,7 @@
   <script src="assets/js/vendor/black-hole.js"></script>
   <script src="assets/js/vendor/jquery.timelinr-0.9.7.js"></script>
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/mind-map.js"></script>
 </body>
 
 </html>
