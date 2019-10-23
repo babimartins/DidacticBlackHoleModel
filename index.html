@@ -569,7 +569,31 @@
                       <p>Do lado esquerdo da equação, temos a geometria do espaço tempo:
                         como ele curva, como define as noções de tempo, distancia e sequencia de eventos.
                       Do lado direiro, o fluxo de momento e energia, tal como massa e radiação, sendo a origem dos campos gravitacionais.  </p>
-                      </div>
+                      
+              <!--<input
+              type="range"
+              id="mass"
+              list="tickmarks"
+              min="0"
+              max="100"
+              step="50"
+            />-->
+              <input
+              type="range"
+              id="mass"
+              list="tickmarks"
+              min="0"
+              max="50"
+              step="50"
+            />
+            <datalist id="tickmarks">
+              <option value="0" label="0%"> 0</option>
+              <option value="50" label="50%"> 50</option>
+              <!--<option value="100" label="100%">100 </option> -->
+            </datalist>
+
+            <svg width="960" height="500" id="curve"></svg>
+</div>
                   </div>
             </li>
             <li class="l-section section">
@@ -660,6 +684,12 @@
   <script src="assets/js/functions.js"></script>
   <script src="assets/js/mind-map.js"></script>
   <script src="assets/js/calculadora.js"></script>
+  
+  <script src="assets/js/d3/d3.min.js"></script>
+  <script src="assets/js/d3/d3-scale-chromatic.min.js"></script>
+  <script src="assets/js/d3/d3-3d.min.js"></script>
+  <script src="assets/js/d3/curva.js"></script>
+</html>
 </body>
 
 </html>
