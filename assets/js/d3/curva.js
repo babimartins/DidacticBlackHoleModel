@@ -83,13 +83,16 @@ const massSlider = d3.select("#mass");
 function renderGeometry(e) {
   const massValue = massSlider.node().value;
   const radius = 2;
+  const G = 6.67e-11;
+  const c = 3e8;
 
   function singularity() {
     return (x, y) => {
       let M = 3;
-      return distance() < radius * radius
+      return false
         ? 0
-        : 2 * Math.sqrt(2 * M * (radius - 2 * M));
+        : ((4 * G * massValue) / (c * c)) *
+            Math.sqrt((distance(x, y) * c * c) / (2 * G * massValue) - 1);
     };
   }
 
@@ -106,7 +109,8 @@ function renderGeometry(e) {
   }
   plane.radius = 0;
 
-  const f = massValue == 0 ? plane : massValue == 50 ? distortion : singularity;
+  const f =
+    massValue == 0 ? plane : massValue <= 100 ? distortion : singularity;
 
   init(f);
 }
