@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/timeline.css">
   <link rel="stylesheet" href="assets/css/mind-map.css">
+  <link rel="stylesheet" href="assets/css/calculator.css">
   <link rel="icon" href="assets/img/milkyway-favicon.png" type="image/ico" />
   <link rel="shortcut icon" href="assets/img/milkyway-favicon.png" type="image/x-icon" />
 
@@ -494,7 +495,19 @@
             </li>
 
             <li class="l-section section">
-              <div></div>
+              <div class="simulacao" id="calculadora">
+                <h2>O raio de Schwarzschild</h2>
+                <div class="hire">
+                  <p>O raio de Schwarzschild ralaciona a massa de um objeto com o raio do horizonte de eventos que este teria para ser um buraco negro de Schwarzschild ()</p>
+                  <p>Aqui você poderá calcular qual será o raio de uma esfera para que, com a massa informada, ela seja um buraco negro de acordo com a equação do Raio de Schwarzschild.
+                      Para isso, você precisa informar apenas a massa do corpo (é possível usar notação científica, sendo um número na forma {a}e{x} reprensentando {a}x10<sup>{b}</sup>)
+                      </p>
+                  <label for="calculadora--massa"> 
+                    Massa: <input type="number" id="calculadora--massa"> kg
+                  </label>
+                  <p id="calculadora--resultado">Insira um valor de massa para obter o raio do horizonte de eventos</p>
+                </div>
+              </div>
             </li>
 
             <li class="l-section section">
@@ -582,7 +595,11 @@
   <script src="assets/js/vendor/black-hole.js"></script>
   <script src="assets/js/vendor/jquery.timelinr-0.9.7.js"></script>
   <script src="assets/js/functions.js"></script>
+<<<<<<< Updated upstream
   <script src="assets/js/mind-map.js"></script>
+=======
+  <script src="assets/js/calculadora.js"></script>
+>>>>>>> Stashed changes
 </body>
 
 </html>
