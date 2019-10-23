@@ -45,3 +45,11 @@ let horizonteEvExplEl = document.querySelector("#horizonte-ev-explanation");
 horizonteEvEl.addEventListener("click", function() {
   horizonteEvExplEl.classList.toggle("explanation");
 });
+
+let discoAcrecaoEl = document.querySelector("#disco-acrecao");
+console.log("1");
+let discoAcrecaoExplEl = document.querySelector("#disco-acrecao-explanation");
+discoAcrecaoEl.addEventListener("click", function() {
+  console.log(discoAcrecaoExpEl);
+  discoAcrecaoExplEl.classList.toggle("explanation");
+});
