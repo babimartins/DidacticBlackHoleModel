@@ -1,3 +1,8 @@
 #calculadora input {
   color: black;
+  text-align: end;
+}
+
+#calculadora {
+  text-align: justify;
 }
