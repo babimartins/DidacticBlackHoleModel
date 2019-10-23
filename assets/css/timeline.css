@@ -4,7 +4,7 @@
   overflow: hidden;
   margin: 30px auto;
   position: relative;
-  background: url('../img/timeline/dot.gif') left 45px repeat-x;
+  background: url("../img/timeline/dot.gif") left 45px repeat-x;
 }
 
 #timeline a {
@@ -33,7 +33,7 @@
   height: 50px;
   font-size: 24px;
   text-align: center;
-  background: url('../img/timeline/biggerdot.png') center bottom no-repeat;
+  background: url("../img/timeline/biggerdot.png") center bottom no-repeat;
 }
 
 #dates a {
@@ -82,7 +82,11 @@
 }
 
 #issues li h1 {
+<<<<<<< HEAD
   color: rgb(80, 106, 255);
+=======
+  color: rgb(27, 138, 219);
+>>>>>>> 4ec3b6d07857e3e7a8cc19dd9b1dbbaebd76406a
   display: flex;
   font-size: 36px;
   margin: 20px 100px 10px 0;
@@ -103,11 +107,16 @@
   text-align: justify;
 }
 
+<<<<<<< HEAD
 #issues li p {
   margin-right: 50px;
 }
 
 #grad_left, #grad_right {
+=======
+#grad_left,
+#grad_right {
+>>>>>>> 4ec3b6d07857e3e7a8cc19dd9b1dbbaebd76406a
   width: 100px;
   height: 350px;
   position: absolute;
@@ -116,21 +125,23 @@
 
 #grad_left {
   left: 0;
-  background: url('../img/timeline/grad_left.png') repeat-y;
+  background: url("../img/timeline/grad_left.png") repeat-y;
 }
 
 #grad_right {
   right: 0;
-  background: url('../img/timeline/grad_right.png') repeat-y;
+  background: url("../img/timeline/grad_right.png") repeat-y;
 }
 
-#next, #prev {
+#next,
+#prev {
   position: absolute;
   top: 50%;
   width: 22px;
   height: 38px;
 }
 
+<<<<<<< HEAD
 #next svg, #prev svg {
   color: white;
 }
@@ -141,11 +152,28 @@
 
 #prev {
   left: 100px;
+=======
+#next:hover,
+#prev:hover {
+  background-position: 0 -76px;
 }
 
-#next.disabled, #prev.disabled {
+#next {
+  right: 0;
+  background-image: url("../img/timeline/next.png");
+}
+
+#prev {
+  left: 0;
+  background-image: url("../img/timeline/prev.png");
+>>>>>>> 4ec3b6d07857e3e7a8cc19dd9b1dbbaebd76406a
+}
+
+#next.disabled,
+#prev.disabled {
   opacity: 0.2;
 }
+<<<<<<< HEAD
 
 .timeline-item-container {
   width: 100%;
@@ -160,3 +188,5 @@
 .timeline-item-body {
   margin-left: 220px;
 }
+=======
+>>>>>>> 4ec3b6d07857e3e7a8cc19dd9b1dbbaebd76406a
