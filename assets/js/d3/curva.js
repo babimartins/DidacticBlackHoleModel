@@ -8,13 +8,13 @@ let alpha = 0,
 
 const svg = d3
   .select("#curve")
-  .call(
-    d3
-      .drag()
-      .on("drag", dragged)
-      .on("start", dragStart)
-      .on("end", dragEnd)
-  )
+  // .call(
+  //   d3
+  //     .drag()
+  //     .on("drag", dragged)
+  //     .on("start", dragStart)
+  //     .on("end", dragEnd)
+  // )
   .append("g");
 
 const geometry = d3
