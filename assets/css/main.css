@@ -687,6 +687,9 @@ body {
 .side-nav li:nth-child(6)::before {
   content: "06";
 }
+.side-nav li:nth-child(7)::before {
+  content: "07";
+}
 
 .side-nav li.is-active {
   color: #0f33ff;
@@ -1901,4 +1904,8 @@ body {
 .outer-nav li.is-vis:nth-child(6) {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
+}
+.outer-nav li.is-vis:nth-child(7) {
+  -webkit-transition-delay: 0.24s;
+  transition-delay: 0.24s;
 }
