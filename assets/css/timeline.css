@@ -4,18 +4,19 @@
   overflow: hidden;
   margin: 30px auto;
   position: relative;
-  background: url('../img/timeline/dot.gif') left 45px repeat-x;
+  background: url("../img/timeline/dot.gif") left 45px repeat-x;
 }
 
 #timeline a {
-  color: #e49587;
+  color: rgb(55, 151, 222);
   text-decoration: none;
-    /* -webkit-transition: 0.5s;
+  /* -webkit-transition: 0.5s;
     transition: 0.5s; */
 }
 
-#timeline a:hover, #timeline a.selected {
-  color: #ff6347;
+#timeline a:hover,
+#timeline a.selected {
+  color: rgb(2, 95, 167);
 }
 
 #dates {
@@ -32,7 +33,7 @@
   height: 50px;
   font-size: 24px;
   text-align: center;
-  background: url('../img/timeline/biggerdot.png') center bottom no-repeat;
+  background: url("../img/timeline/biggerdot.png") center bottom no-repeat;
 }
 
 #dates a {
@@ -65,7 +66,7 @@
 #issues li img {
   float: left;
   margin: 50px 35px 10px 0px;
-  width: 192px;   
+  width: 192px;
   height: 220px;
   background: transparent;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
@@ -81,10 +82,10 @@
 }
 
 #issues li h1 {
-  color: #ff4d47;
+  color: rgb(27, 138, 219);
   display: flex;
   font-size: 36px;
-  margin: 20px 100px 10px 0; 
+  margin: 20px 100px 10px 0;
   line-height: 35px;
   text-shadow: #000 1px 1px 2px;
 }
@@ -104,7 +105,8 @@
   text-align: justify;
 }
 
-#grad_left, #grad_right {
+#grad_left,
+#grad_right {
   width: 100px;
   height: 350px;
   position: absolute;
@@ -113,15 +115,16 @@
 
 #grad_left {
   left: 0;
-  background: url('../img/timeline/grad_left.png') repeat-y;
+  background: url("../img/timeline/grad_left.png") repeat-y;
 }
 
 #grad_right {
   right: 0;
-  background: url('../img/timeline/grad_right.png') repeat-y;
+  background: url("../img/timeline/grad_right.png") repeat-y;
 }
 
-#next, #prev {
+#next,
+#prev {
   position: absolute;
   top: 0;
   font-size: 70px;
@@ -134,20 +137,22 @@
   overflow: hidden;
 }
 
-#next:hover, #prev:hover {
+#next:hover,
+#prev:hover {
   background-position: 0 -76px;
 }
 
 #next {
   right: 0;
-  background-image: url('../img/timeline/next.png');
+  background-image: url("../img/timeline/next.png");
 }
 
 #prev {
   left: 0;
-  background-image: url('../img/timeline/prev.png');
+  background-image: url("../img/timeline/prev.png");
 }
 
-#next.disabled, #prev.disabled {
+#next.disabled,
+#prev.disabled {
   opacity: 0.2;
 }

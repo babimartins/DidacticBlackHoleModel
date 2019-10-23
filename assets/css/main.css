@@ -112,7 +112,7 @@ h1 {
 }
 
 mark {
-  background: #ff0;
+  background: rgb(189, 172, 255);
   color: #000;
 }
 
@@ -258,15 +258,15 @@ th {
 }
 
 ::-moz-selection {
-  background: #fff498;
+  background: rgb(119, 178, 222);
 }
 
 ::selection {
-  background: #fff498;
+  background: rgb(119, 178, 222);
 }
 
 ::-moz-selection {
-  background: #fff498;
+  background: rgb(119, 178, 222);
 }
 
 img::-moz-selection {
@@ -282,7 +282,7 @@ img::-moz-selection {
 }
 
 body {
-  -webkit-tap-highlight-color: #f0745f;
+  -webkit-tap-highlight-color: rgb(55, 151, 222);
 }
 
 body {
@@ -584,7 +584,7 @@ body {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #ff6347;
+  background-color: rgb(2, 95, 167);
   border: none;
   opacity: 0;
   visibility: hidden;
@@ -684,7 +684,7 @@ body {
 }
 
 .side-nav li.is-active {
-  color: #ff6347;
+  color: rgb(2, 95, 167);
   -webkit-transition: color 0.4s ease-in-out;
   transition: color 0.4s ease-in-out;
 }
@@ -750,7 +750,7 @@ body {
   left: 0;
   width: 30px;
   height: 4px;
-  background-color: #ff6347;
+  background-color: rgb(2, 95, 167);
 }
 
 .intro--banner h1 {
@@ -776,7 +776,7 @@ body {
   left: 0;
   right: 0;
   height: 100%;
-  background-color: #ff6347;
+  background-color: rgb(2, 95, 167);
   z-index: -1;
   -webkit-transition: left 0.2s ease-in-out;
   transition: left 0.2s ease-in-out;
@@ -1178,7 +1178,7 @@ body {
   left: 200px;
   -webkit-transform: rotate(-25deg);
   transform: rotate(-25deg);
-  border: 5px solid #ff6347;
+  border: 5px solid rgb(2, 95, 167);
   border-right-color: transparent;
   border-bottom-color: transparent;
 }
@@ -1192,7 +1192,7 @@ body {
   transform: rotate(45deg);
   width: 10px;
   height: 10px;
-  background-color: #ff6347;
+  background-color: rgb(2, 95, 167);
 }
 
 .about--banner h2 {
@@ -1211,7 +1211,7 @@ body {
   left: 268px;
   width: 30px;
   height: 30px;
-  background-color: #ff6347;
+  background-color: rgb(2, 95, 167);
   border-radius: 50%;
 }
 
@@ -1222,7 +1222,7 @@ body {
   left: 255px;
   width: 10px;
   height: 10px;
-  background-color: #ff6347;
+  background-color: rgb(2, 95, 167);
 }
 
 .about--banner a {
@@ -1274,7 +1274,7 @@ body {
   height: 75px;
   text-decoration: none;
   color: #fff;
-  border: 10px solid #ff6347;
+  border: 10px solid rgb(2, 95, 167);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1448,12 +1448,12 @@ body {
 }
 
 .contact--lockup .modal--options li:nth-child(2) {
-  background-color: #ea4c89;
+  background-color: rgb(55, 151, 222);
 }
 
 .contact--lockup .modal--options li:nth-child(3) {
   margin-bottom: 0;
-  background-color: #ff6347;
+  background-color: rgb(2, 95, 167);
   text-transform: uppercase;
 }
 
@@ -1525,7 +1525,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: #ff6347;
+  background-color: rgb(2, 95, 167);
   border: none;
   border-radius: 0;
 }
@@ -1607,8 +1607,8 @@ body {
 }
 
 .work-request--options input[type="checkbox"]:checked + label {
-  background-color: #ff6347;
-  border-color: #ff6347;
+  background-color: rgb(2, 95, 167);
+  border-color: rgb(2, 95, 167);
 }
 
 .work-request--options input[type="checkbox"]:checked + label svg {
@@ -1738,7 +1738,7 @@ body {
   -webkit-transform: translateZ(0) translateX(0) rotateY(0deg);
   transform: translateZ(0) translateX(0) rotateY(0deg);
   min-height: 100%;
-  outline: 30px solid #ff6347;
+  outline: 30px solid rgb(2, 95, 167);
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
@@ -1766,7 +1766,7 @@ body {
 .effect-rotate-left--animate .container {
   -webkit-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
   transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
-  outline: 30px solid #ff6347;
+  outline: 30px solid rgb(2, 95, 167);
 }
 
 .outer-nav {
@@ -1840,7 +1840,7 @@ body {
   width: 110%;
   height: 15px;
   opacity: 0;
-  background-color: #ff6347;
+  background-color: rgb(2, 95, 167);
 }
 
 .outer-nav > li.is-active::before {
@@ -1854,8 +1854,8 @@ body {
 }
 
 @media (max-width: 600px) {
-  .outer-nav>li {
-    font-size: 30px
+  .outer-nav > li {
+    font-size: 34px;
   }
 }
 
@@ -1877,22 +1877,4 @@ body {
 .outer-nav li.is-vis:nth-child(5) {
   -webkit-transition-delay: 0.16s;
   transition-delay: 0.16s;
-}
-
-.rects {
-  fill: rgb(100, 200, 255);
-  rx: 16;
-  ry: 16;
-  width: 100px;
-  height: 35px;
-}
-
-.texts {
-  fill: rgba(0, 0, 0);
-  font-size: 20px;
-}
-
-.lines {
-  stroke: rgb(100, 200, 255);
-  stroke-width: 2px;
 }
