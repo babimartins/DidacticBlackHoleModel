@@ -1835,6 +1835,11 @@ body {
   transition-delay: 0.16s;
 }
 
+.outer-nav li.is-vis:nth-child(6) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
 .rects {
   fill: rgb(100, 200, 255);
   rx: 16;

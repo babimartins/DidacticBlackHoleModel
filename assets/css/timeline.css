@@ -10,8 +10,6 @@
 #timeline a {
   color: rgb(80, 106, 255);
   text-decoration: none;
-  /* -webkit-transition: 0.5s;
-    transition: 0.5s; */
 }
 
 #timeline a:hover, #timeline a.selected {
@@ -58,11 +56,6 @@
   float: left;
 }
 
-#issues li.selected img {
-  /* -webkit-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1); */
-}
-
 #issues li img {
   float: left;
   margin: 50px 35px 10px 0px;
@@ -74,11 +67,6 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
   /* IE 6 & 7 */
   zoom: 1;
-  /* -webkit-transition: all 2s ease-in-out;
-  transition: all 2s ease-in-out;
-  -webkit-transform: scale(0.7, 0.7);
-  /
-  transform: scale(0.7, 0.7); */
 }
 
 #issues li h1 {
