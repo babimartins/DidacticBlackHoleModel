@@ -1,0 +1,16 @@
+.rects {
+  fill: rgb(55, 151, 222);
+  rx: 12;
+  ry: 12;
+}
+
+.texts {
+  fill: rgba(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+}
+
+.lines {
+  stroke: rgb(55, 151, 222);
+  stroke-width: 3px;
+}
