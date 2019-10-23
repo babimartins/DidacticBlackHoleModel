@@ -8,14 +8,15 @@
 }
 
 #timeline a {
-  color: #e49587;
+  color: rgb(80, 106, 255);
   text-decoration: none;
-    /* -webkit-transition: 0.5s;
+  /* -webkit-transition: 0.5s;
     transition: 0.5s; */
 }
 
 #timeline a:hover, #timeline a.selected {
-  color: #ff6347;
+  /* color: rgb(32, 65, 253); */
+  color: white;
 }
 
 #dates {
@@ -46,7 +47,7 @@
 
 #issues {
   width: 800px;
-  height: 350px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -65,7 +66,7 @@
 #issues li img {
   float: left;
   margin: 50px 35px 10px 0px;
-  width: 192px;   
+  width: 192px;
   height: 220px;
   background: transparent;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
@@ -81,10 +82,10 @@
 }
 
 #issues li h1 {
-  color: #ff4d47;
+  color: rgb(80, 106, 255);
   display: flex;
   font-size: 36px;
-  margin: 20px 100px 10px 0; 
+  margin: 20px 100px 10px 0;
   line-height: 35px;
   text-shadow: #000 1px 1px 2px;
 }
@@ -94,14 +95,16 @@
   margin-top: 0;
 }
 
-#issues li p {
-  display: flex;
+#issues li span, #issues li p, #issues li strong, #issues li sub, #issues li sup {
   font-size: 14px;
-  margin-right: 100px;
   font-weight: normal;
   line-height: 22px;
   text-shadow: #000 1px 1px 2px;
   text-align: justify;
+}
+
+#issues li p {
+  margin-right: 50px;
 }
 
 #grad_left, #grad_right {
@@ -123,31 +126,37 @@
 
 #next, #prev {
   position: absolute;
-  top: 0;
-  font-size: 70px;
-  top: 170px;
+  top: 50%;
   width: 22px;
   height: 38px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  text-indent: -9999px;
-  overflow: hidden;
 }
 
-#next:hover, #prev:hover {
-  background-position: 0 -76px;
+#next svg, #prev svg {
+  color: white;
 }
 
 #next {
-  right: 0;
-  background-image: url('../img/timeline/next.png');
+  right: 100px;
 }
 
 #prev {
-  left: 0;
-  background-image: url('../img/timeline/prev.png');
+  left: 100px;
 }
 
 #next.disabled, #prev.disabled {
   opacity: 0.2;
+}
+
+.timeline-item-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.timeline-item-img {
+  width: 200px;
+  float: left;
+}
+
+.timeline-item-body {
+  margin-left: 220px;
 }

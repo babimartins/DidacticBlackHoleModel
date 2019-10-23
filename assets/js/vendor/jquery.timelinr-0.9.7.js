@@ -225,11 +225,19 @@ jQuery.fn.timelinr = function (options) {
     if (settings.arrowKeys == 'true') {
       if (settings.orientation == 'horizontal') {
         $(document).keydown(function (event) {
-          if (event.keyCode == 39) {
-            $(settings.nextButton).click();
-          }
-          if (event.keyCode == 37) {
-            $(settings.prevButton).click();
+          
+          let curActive = $('.side-nav li').parent().find('.is-active');
+          let curPos = $('.side-nav').children().index(curActive);
+
+          if(curPos == 1){
+            
+            if (event.keyCode == 39) {
+              $(settings.nextButton).click();
+            }
+            if (event.keyCode == 37) {
+              $(settings.prevButton).click();
+            }
+
           }
         });
       } else if (settings.orientation == 'vertical') {
