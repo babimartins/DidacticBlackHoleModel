@@ -2,26 +2,12 @@ let buracoNegroEl = document.querySelector("#buraco-negro");
 let buracoNegroExplEl = document.querySelector("#buraco-negro-explanation");
 buracoNegroEl.addEventListener("click", function() {
   buracoNegroExplEl.classList.toggle("explanation");
-  /*
-  if (!buracoNegroExplEl.classList.contains("explanation")) {
-    setTimeout(() => {
-      buracoNegroExplEl.classList.toggle("explanation");
-    }, 1000);
-  }
-  */
 });
 
 let gravidadeEl = document.querySelector("#gravidade");
 let gravidadeExplEl = document.querySelector("#gravidade-explanation");
 gravidadeEl.addEventListener("click", function() {
   gravidadeExplEl.classList.toggle("explanation");
-  /*
-  if (!gravidadeExplEl.classList.contains("explanation")) {
-    setTimeout(() => {
-      gravidadeExplEl.classList.toggle("explanation");
-    }, 1000);
-  }
-  */
 });
 
 let geometriaEl = document.querySelector("#geometria");
@@ -46,4 +32,16 @@ let massaEl = document.querySelector("#massa");
 let massaExplEl = document.querySelector("#massa-explanation");
 massaEl.addEventListener("click", function() {
   massaExplEl.classList.toggle("explanation");
+});
+
+let singularidadeEl = document.querySelector("#singularidade");
+let singularidadeExplEl = document.querySelector("#singularidade-explanation");
+singularidadeEl.addEventListener("click", function() {
+  singularidadeExplEl.classList.toggle("explanation");
+});
+
+let horizonteEvEl = document.querySelector("#horizonte-eventos");
+let horizonteEvExplEl = document.querySelector("#horizonte-ev-explanation");
+horizonteEvEl.addEventListener("click", function() {
+  horizonteEvExplEl.classList.toggle("explanation");
 });
